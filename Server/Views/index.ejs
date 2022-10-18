@@ -11,11 +11,27 @@
     <link rel="stylesheet" href="./Content/app.css">
 </head>
 <body>
-    <h1> Hello, World!!!</h1>
+      <!--Main Navigation-->
+    <header> 
+        <%- include('./components/header.ejs'); %>
+    </header>
+
+    <!--content section-->
+    <main>
+        <%- include('./content/' + page + '.ejs'); %>
+    </main>
+
+    <!--site-wide footer-->
+    <footer>
+        <%- include('./components/footer.ejs'); %>
+    </footer>
+
+
     <!-- JavaScript goes here-->
     <script src="./jquery/dist/jquery.min.js"></script>
-    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script src="./Scripts/app.js"></script>
+
 </body>
 </html>
